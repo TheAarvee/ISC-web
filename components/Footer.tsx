@@ -6,7 +6,7 @@ import { FacebookLogoIcon, InstagramLogoIcon, LinkedinLogoIcon } from "@phosphor
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#013218] px-8 py-10 md:px-12 lg:px-20">
+    <footer className="w-full bg-brand-950 px-8 py-10 md:px-12 lg:px-20">
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-10">
         <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
           <div className="flex flex-col gap-5">

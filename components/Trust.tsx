@@ -25,7 +25,7 @@ export default function Trust() {
 
                     <Link
                         href="#contact"
-                        className="inline-flex w-fit gap-2 items-center justify-center px-6 py-3 text-sm font-medium text-white bg-black transition-colors duration-300 hover:bg-black/80 hover:scale-105 transition-transform duration-600"
+                        className="inline-flex w-fit gap-2 items-center justify-center px-6 py-3 text-sm font-medium text-white bg-[#009cc7] transition-colors duration-300 hover:bg-[#009cc7]/90 hover:scale-105 transition-transform duration-600"
                     >
                         <SealCheckIcon size={24} color="#ffffff" weight="fill" />
                         Get Trusted Advice
@@ -35,53 +35,53 @@ export default function Trust() {
                 {/* Main Pillars */}
                 <div className="grid gap-5 font-sans font-extralight tracking-wide xl:grid-cols-4 items-stretch">
                     {/* Buy */}
-                    <div className="group flex h-full min-h-[320px] w-full flex-col justify-between p-6 border border-black/20 hover:bg-gradient-to-b from-green-100 via-green-300 to-green-500 transition-colors duration-300 hover:scale-105 transition-transform duration-500">
+                    <div className="group flex h-full min-h-[320px] w-full flex-col justify-between p-6 border border-black/20 hover:bg-gradient-to-b from-brand-100 via-brand-300 to-brand-500 transition-colors duration-300 hover:scale-105 transition-transform duration-500">
                         <div className="flex items-center justify-between">
-                            <h2 className="text-3xl text-black font-medium group-hover:text-green-700 transition-colors duration-100 tracking-tight">
+                            <h2 className="text-3xl text-black font-medium group-hover:text-brand-700 transition-colors duration-100 tracking-tight">
                                 Buy
                             </h2>
-                            <CurrencyInrIcon className="text-black group-hover:text-green-700 transition-colors duration-300" size={32} />
+                            <CurrencyInrIcon className="text-black group-hover:text-brand-700 transition-colors duration-300" size={32} />
                         </div>
-                        <p className="mt-auto font-regular text-md text-gray-500 group-hover:text-green-800 transition-colors duration-300">
+                        <p className="mt-auto font-regular text-md text-gray-500 group-hover:text-brand-800 transition-colors duration-300">
                             Navigate the market with confidence and find opportunities
                             that align with your objectives.
                         </p>
                     </div>
                     {/* Sell */}
-                    <div className="group flex h-full min-h-[320px] w-full flex-col justify-between p-6 border border-black/20 hover:bg-gradient-to-b from-green-100 via-green-300 to-green-500 transition-colors duration-300 hover:scale-105 transition-transform duration-500">
+                    <div className="group flex h-full min-h-[320px] w-full flex-col justify-between p-6 border border-black/20 hover:bg-gradient-to-b from-brand-100 via-brand-300 to-brand-500 transition-colors duration-300 hover:scale-105 transition-transform duration-500">
                         <div className="flex items-center justify-between">
-                            <h2 className="text-3xl text-black font-medium group-hover:text-green-700 transition-colors duration-100 tracking-tight">
+                            <h2 className="text-3xl text-black font-medium group-hover:text-brand-700 transition-colors duration-100 tracking-tight">
                                 Sell
                             </h2>
-                            <TagIcon className="text-black group-hover:text-green-700 transition-colors duration-300" size={32} />
+                            <TagIcon className="text-black group-hover:text-brand-700 transition-colors duration-300" size={32} />
                         </div>
-                        <p className="mt-auto font-regular text-md text-gray-500 group-hover:text-green-800 transition-colors duration-300">
+                        <p className="mt-auto font-regular text-md text-gray-500 group-hover:text-brand-800 transition-colors duration-300">
                             Make informed selling decisions with market intelligence
                             and expert advisory support.
                         </p>
                     </div>
                     {/* Manage */}
-                    <div className="group flex h-full min-h-[320px] w-full flex-col justify-between p-6 border border-black/20 hover:bg-gradient-to-b from-green-100 via-green-300 to-green-500 transition-colors duration-300 hover:scale-105 transition-transform duration-500">
+                    <div className="group flex h-full min-h-[320px] w-full flex-col justify-between p-6 border border-black/20 hover:bg-gradient-to-b from-brand-100 via-brand-300 to-brand-500 transition-colors duration-300 hover:scale-105 transition-transform duration-500">
                         <div className="flex items-center justify-between">
-                            <h2 className="text-3xl text-black font-medium group-hover:text-green-700 transition-colors duration-100 tracking-tight">
+                            <h2 className="text-3xl text-black font-medium group-hover:text-brand-700 transition-colors duration-100 tracking-tight">
                                 Manage
                             </h2>
-                            <HandshakeIcon className="text-black group-hover:text-green-700 transition-colors duration-300" size={32} />
+                            <HandshakeIcon className="text-black group-hover:text-brand-700 transition-colors duration-300" size={32} />
                         </div>
-                        <p className="mt-auto font-regular text-md text-gray-500 group-hover:text-green-800 transition-colors duration-300">
+                        <p className="mt-auto font-regular text-md text-gray-500 group-hover:text-brand-800 transition-colors duration-300">
                             Protect and enhance the value of your property
                             through professional asset management.
                         </p>
                     </div>
                     {/* Invest */}
-                    <div className="group flex h-full min-h-[320px] w-full flex-col justify-between p-6 border border-black/20 hover:bg-gradient-to-b from-green-100 via-green-300 to-green-500 transition-colors duration-300 hover:scale-105 transition-transform duration-500">
+                    <div className="group flex h-full min-h-[320px] w-full flex-col justify-between p-6 border border-black/20 hover:bg-gradient-to-b from-brand-100 via-brand-300 to-brand-500 transition-colors duration-300 hover:scale-105 transition-transform duration-500">
                         <div className="flex items-center justify-between">
-                            <h2 className="text-3xl text-black font-medium group-hover:text-green-700 transition-colors duration-100 tracking-tight">
+                            <h2 className="text-3xl text-black font-medium group-hover:text-brand-700 transition-colors duration-100 tracking-tight">
                                 Invest
                             </h2>
-                            <ChartLineUpIcon className="text-black group-hover:text-green-700 transition-colors duration-300" size={32} />
+                            <ChartLineUpIcon className="text-black group-hover:text-brand-700 transition-colors duration-300" size={32} />
                         </div>
-                        <p className="mt-auto font-regular text-md text-gray-500 group-hover:text-green-800 transition-colors duration-300">
+                        <p className="mt-auto font-regular text-md text-gray-500 group-hover:text-brand-800 transition-colors duration-300">
                             Unlock opportunities that support long-term growth, wealth creation
                             and sustainable returns through informed real estate decisions.
                         </p>
@@ -90,7 +90,7 @@ export default function Trust() {
             </div>
 
             {/* Overview Metrics */}
-            <div className="relative items-center justify-center grid grid-cols-1 gap-5 bg-green-600 px-15 py-10 md:grid-cols-4">
+            <div className="relative items-center justify-center grid grid-cols-1 gap-5 bg-brand-600 px-15 py-10 md:grid-cols-4">
                 {/* Years of Experience */}
                 <div className="flex flex-col items-center justify-center">
                     <h2 className="text-7xl text-white font-serif font-normal tracking-tight">

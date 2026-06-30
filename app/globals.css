@@ -35,6 +35,17 @@
   --color-secondary: var(--secondary);
   --color-primary-foreground: var(--primary-foreground);
   --color-primary: var(--primary);
+  --color-brand-50: var(--brand-50);
+  --color-brand-100: var(--brand-100);
+  --color-brand-200: var(--brand-200);
+  --color-brand-300: var(--brand-300);
+  --color-brand-400: var(--brand-400);
+  --color-brand-500: var(--brand-500);
+  --color-brand-600: var(--brand-color);
+  --color-brand-700: var(--brand-700);
+  --color-brand-800: var(--brand-800);
+  --color-brand-900: var(--brand-900);
+  --color-brand-950: var(--brand-950);
   --color-popover-foreground: var(--popover-foreground);
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
@@ -51,17 +62,17 @@
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
-  --brand-green-50: #effef5;
-  --brand-green-100: #d9ffe8;
-  --brand-green-200: #b5fdd3;
-  --brand-green-300: #7bfab1;
-  --brand-green-400: #3bed87;
-  --brand-green-500: #11d666;
-  --brand-green-600: #07a24a;
-  --brand-green-700: #0a8b42;
-  --brand-green-800: #0e6d38;
-  --brand-green-900: #0e5931;
-  --brand-green-950: #013218;
+  --brand-color: #009cc7;
+  --brand-50: #eefbff;
+  --brand-100: #d6f5ff;
+  --brand-200: #afeaff;
+  --brand-300: #73dcff;
+  --brand-400: #30c9f4;
+  --brand-500: #09b4df;
+  --brand-700: #087d9f;
+  --brand-800: #0c6681;
+  --brand-900: #10546b;
+  --brand-950: #063746;
   --brand-muted: #6b7280;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -147,12 +158,12 @@
     color: var(--brand-muted);
   }
 
-  .bg-brand-green-600 {
-    background-color: var(--brand-green-600);
+  .bg-brand-600 {
+    background-color: var(--brand-color);
   }
 
-  .bg-brand-green-900 {
-    background-color: var(--brand-green-900);
+  .bg-brand-900 {
+    background-color: var(--brand-900);
   }
 }
 
@@ -219,8 +230,8 @@
   }
 
   .consultation-phone .react-international-phone-country-selector-button--active {
-    border-color: #0a8b42;
-    box-shadow: 0 0 0 2px #d9ffe8;
+    border-color: var(--brand-700);
+    box-shadow: 0 0 0 2px var(--brand-100);
   }
 
   .consultation-phone .react-international-phone-country-selector-button__button-content {
@@ -249,11 +260,11 @@
   }
 
   .consultation-phone .react-international-phone-country-selector-dropdown__list-item--selected {
-    background: #effef5;
+    background: var(--brand-50);
   }
 
   .consultation-phone .react-international-phone-country-selector-dropdown__list-item--focused {
-    background: #d9ffe8;
+    background: var(--brand-100);
   }
 
   .consultation-phone .react-international-phone-input {
@@ -268,7 +279,7 @@
   }
 
   .consultation-phone .react-international-phone-input:focus {
-    border-color: #0a8b42;
-    box-shadow: 0 0 0 2px #d9ffe8;
+    border-color: var(--brand-700);
+    box-shadow: 0 0 0 2px var(--brand-100);
   }
 }

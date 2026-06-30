@@ -73,7 +73,7 @@ export default function ConsultationForm() {
             name="firstName"
             required
             placeholder="Enter your first name"
-            className="h-12 rounded-md border border-neutral-300 px-4 text-sm text-neutral-900 outline-none transition-colors placeholder:text-neutral-400 focus:border-[#0a8b42] focus:ring-2 focus:ring-[#d9ffe8]"
+            className="h-12 rounded-md border border-neutral-300 px-4 text-sm text-neutral-900 outline-none transition-colors placeholder:text-neutral-400 focus:border-brand-700 focus:ring-2 focus:ring-brand-100"
           />
         </label>
 
@@ -86,7 +86,7 @@ export default function ConsultationForm() {
             name="lastName"
             required
             placeholder="Enter your last name"
-            className="h-12 rounded-md border border-neutral-300 px-4 text-sm text-neutral-900 outline-none transition-colors placeholder:text-neutral-400 focus:border-[#0a8b42] focus:ring-2 focus:ring-[#d9ffe8]"
+            className="h-12 rounded-md border border-neutral-300 px-4 text-sm text-neutral-900 outline-none transition-colors placeholder:text-neutral-400 focus:border-brand-700 focus:ring-2 focus:ring-brand-100"
           />
         </label>
 
@@ -130,7 +130,7 @@ export default function ConsultationForm() {
             type="email"
             name="email"
             placeholder="Enter your email address"
-            className="h-12 rounded-md border border-neutral-300 px-4 text-sm text-neutral-900 outline-none transition-colors placeholder:text-neutral-400 focus:border-[#0a8b42] focus:ring-2 focus:ring-[#d9ffe8]"
+            className="h-12 rounded-md border border-neutral-300 px-4 text-sm text-neutral-900 outline-none transition-colors placeholder:text-neutral-400 focus:border-brand-700 focus:ring-2 focus:ring-brand-100"
           />
         </label>
       </div>
@@ -143,7 +143,7 @@ export default function ConsultationForm() {
           name="propertyType"
           defaultValue=""
           required
-          className="h-12 rounded-md border border-neutral-300 px-4 text-sm text-neutral-900 outline-none transition-colors focus:border-[#0a8b42] focus:ring-2 focus:ring-[#d9ffe8]"
+          className="h-12 rounded-md border border-neutral-300 px-4 text-sm text-neutral-900 outline-none transition-colors focus:border-brand-700 focus:ring-2 focus:ring-brand-100"
         >
           <option value="" disabled>
             Select your property type
@@ -168,7 +168,7 @@ export default function ConsultationForm() {
           placeholder="Enquiry"
           required
           rows={6}
-          className="min-h-40 rounded-md border border-neutral-300 px-4 py-3 text-sm text-neutral-900 outline-none transition-colors placeholder:text-neutral-400 focus:border-[#0a8b42] focus:ring-2 focus:ring-[#d9ffe8]"
+          className="min-h-40 rounded-md border border-neutral-300 px-4 py-3 text-sm text-neutral-900 outline-none transition-colors placeholder:text-neutral-400 focus:border-brand-700 focus:ring-2 focus:ring-brand-100"
         />
       </label>
 
@@ -176,7 +176,7 @@ export default function ConsultationForm() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="inline-flex items-center justify-center rounded-full bg-black px-6 py-2.5 text-sm font-normal tracking-wide text-white cursor-pointer transition-colors duration-400 hover:bg-[#0e5931] disabled:cursor-not-allowed disabled:opacity-60"
+          className="inline-flex items-center justify-center rounded-full bg-black px-6 py-2.5 text-sm font-normal tracking-wide text-white cursor-pointer transition-colors duration-400 hover:bg-brand-900 disabled:cursor-not-allowed disabled:opacity-60"
         >
           {isSubmitting ? "Submitting..." : "Book Consultation"}
         </button>
@@ -185,8 +185,8 @@ export default function ConsultationForm() {
       {message ? <p className="text-sm text-neutral-700">{message}</p> : null}
 
       {showToast ? (
-        <div className="fixed bottom-6 left-1/2 z-50 flex -translate-x-1/2 items-center gap-3 rounded-full bg-[#013218] px-5 py-3 text-sm font-medium text-white shadow-lg shadow-black/20">
-          <CheckCircleIcon size={32} color="#46eb00" weight="fill" />
+        <div className="fixed bottom-6 left-1/2 z-50 flex -translate-x-1/2 items-center gap-3 rounded-full bg-brand-950 px-5 py-3 text-sm font-medium text-white shadow-lg shadow-black/20">
+          <CheckCircleIcon size={32} color="var(--brand-400)" weight="fill" />
           <span>Consultation booked successfully</span>
         </div>
       ) : null}

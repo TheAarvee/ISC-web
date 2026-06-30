@@ -41,7 +41,7 @@ export default async function ProductDeliverable({
               download={deliverable.document.filename}
               target="_blank"
               rel="noreferrer"
-              className="mt-10 inline-flex w-fit gap-2 text-lg font-sans font-medium items-center justify-center px-6 py-3 text-sm font-medium text-white bg-green-800 transition-colors duration-300 hover:bg-green-700 hover:scale-105 transition-transform duration-600"
+              className="mt-10 inline-flex w-fit gap-2 text-lg font-sans font-medium items-center justify-center px-6 py-3 text-sm font-medium text-white bg-brand-800 transition-colors duration-300 hover:bg-brand-700 hover:scale-105 transition-transform duration-600"
             >
               <Download className="h-5 w-5" aria-hidden="true" />
               {deliverable.buttonLabel}

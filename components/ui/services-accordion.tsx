@@ -40,7 +40,7 @@ export default function ServicesAccordion({ services }: ServicesAccordionProps) 
               onClick={() => setActiveIndex(index)}
               className={cn(
                 "min-h-14 w-full 5 px-6 py-2 text-left text-lg text-black transition-colors duration-300 md:min-h-14 md:text-lg rounded-sm",
-                isActive ? "bg-gradient-to-b from-green-100 via-green-300 to-green-500 transition-colors duration-300 text-green-900 font-medium" : "bg-transparent text-black/30 hover:bg-neutral-100"
+                isActive ? "bg-gradient-to-b from-brand-100 via-brand-300 to-brand-500 transition-colors duration-300 text-brand-900 font-medium" : "bg-transparent text-black/30 hover:bg-neutral-100"
               )}
             >
               {service.heading}
