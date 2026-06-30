@@ -30,7 +30,7 @@ export default function Footer() {
 
           <div className="flex flex-col items-start gap-3 text-right md:items-end">
             <p className="text-md text-white/85">Coimbatore, Tamilnadu</p>
-            <p className="text-md text-white/85">+91 99444 02400</p>
+            <a href="tel:+919944402400" className="text-md text-white/85">+91 99444 02400</a>
             <a
               href="mailto:iscpadmanabhan@gmail.com"
               className="text-md text-white/85 transition-opacity hover:opacity-70"
