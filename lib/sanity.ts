@@ -169,9 +169,12 @@ async function fetchSanityQuery<T>(
   return data;
 }
 
-function normalizeServices(services: SanityService[] | undefined): ServiceItem[] {
+function normalizeServices(
+  services: SanityService[] | undefined,
+  fallback: ServiceItem[] = fallbackHomeServices
+): ServiceItem[] {
   if (!services?.length) {
-    return fallbackHomeServices;
+    return fallback;
   }
 
   const normalized: ServiceItem[] = services
@@ -200,7 +203,7 @@ function normalizeServices(services: SanityService[] | undefined): ServiceItem[]
     })
     .filter((service): service is ServiceItem => Boolean(service));
 
-  return normalized.length ? normalized : fallbackHomeServices;
+  return normalized.length ? normalized : fallback;
 }
 
 function normalizeServiceCategories(
@@ -287,6 +290,44 @@ export async function getHomeServices(): Promise<ServiceItem[]> {
     return normalizeServices(data.result?.services);
   } catch {
     return fallbackHomeServices;
+  }
+}
+
+export async function getPropFraxServices(): Promise<ServiceItem[]> {
+  const sanity = getSanityConfig();
+
+  if (!sanity) {
+    return [];
+  }
+
+  const query = `*[_type == "propfrax"][0]{
+    services[]{
+      _key,
+      heading,
+      title,
+      description,
+      image{
+        alt,
+        asset->{
+          url
+        }
+      }
+    }
+  }`;
+
+  try {
+    const data = await fetchSanityQuery<{ result?: { services?: SanityService[] } }>(
+      sanity,
+      query
+    );
+
+    if (!data?.result?.services?.length) {
+      return [];
+    }
+
+    return normalizeServices(data.result.services, []);
+  } catch {
+    return [];
   }
 }
 

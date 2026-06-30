@@ -37,6 +37,7 @@ export const structure: StructureResolver = (S) =>
     .title("Content")
     .items([
       singletonDocument(S, "Home", "home", "home"),
+      singletonDocument(S, "PropFrax", "propfrax", "propfrax"),
       S.divider(),
       productServicesDocument(S, "Propx", "propx"),
       productServicesDocument(S, "PropCare", "propcare"),
